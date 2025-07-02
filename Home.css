@@ -1,0 +1,381 @@
+
+    
+body{
+    margin: 0;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 9vh;
+    background-color: rgb(243, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: clamp(1.5rem, 2.1vw, 2.5rem);
+    padding-left: 3vw;
+}
+
+.nav-icons{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}
+nav.sidebutton{
+    display: none;
+}
+aside{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    line-height: 5;
+    background-color: black;
+    opacity: 0.8;
+}
+
+main{
+    margin-top: 3%;
+}
+img{
+    position: relative;
+    width: auto;
+    height: 70vh;
+    object-fit: cover;
+    margin-left: 10vw;
+    float: left;
+}
+main .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1%;
+}
+.product > .name{
+    font-size: clamp(2rem, 2.5vw, 4rem);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: rgb(36, 35, 35);
+}
+.product > .tag{
+    font-size: clamp(0.5rem, 1.4vw, 1.5rem);
+    font-family: sans-serif;
+    margin-top: 2;
+    font-weight: 200;
+    color: rgb(121, 118, 118);
+    
+}
+main .features{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3;
+    clear: left;
+    padding-top: 3%;
+    margin-left: 10vw;
+    line-height: 1.5;
+}
+
+.features h2{
+    margin-bottom: 0;
+    font-weight: 700;
+   font-size: clamp(1em, 2vw, 2.5rem);
+   color: rgb(104, 102, 102);
+}
+.features ul{
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup{
+    position: relative;
+    top: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vh;
+    left: -10vw;
+}
+
+.signup > input{
+    width: 30%;
+    height: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: text;
+}
+.signup > button{
+    width: 10% ;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(236, 230, 230);
+    border: none;
+    border-radius: 6%;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+ 
+footer{
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 6vh;
+    top: 10vh;
+    background-color: rgb(243, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.socials {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+   h1{
+    font-size: clamp(1.5rem, 2.4vw, 2.5rem);
+    padding-left: 3vw;
+    }
+    .nav-icons{
+    position: absolute;
+    right: 7%;
+    top: 35%;
+    display: flex;
+    width: 10%;
+    gap: 3vw;
+    justify-content: space-around;
+    }
+    img{
+    width: 70vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-left: 5vw;
+    float: none;
+    }
+    main .product{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.product > .name{
+    font-size: clamp(2rem, 2.7vw, 4rem);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: rgb(36, 35, 35);
+}
+.product > .tag{
+    font-size: clamp(1.5rem, 2.9vw, 3rem);
+    font-family: sans-serif;
+    margin-top: 2;
+    font-weight: 200;
+    color: rgb(121, 118, 118);
+    
+}
+main .features{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3;
+    padding-top: 3%;
+    margin-left: 10vw;
+    line-height: 2;
+    clear: none;
+}
+
+.features h2{
+    margin-bottom: 0;
+    font-weight: 700;
+   font-size: clamp(2rem, 3.2vw, 3.5rem);
+   color: rgb(104, 102, 102);
+}
+.features ul{
+    font-weight: 100;
+    font-size: clamp(1.8rem, 2.5vw, 3.2rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup{
+    position: relative;
+    top: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vh;
+    left: -10vw;
+}
+
+.signup > input{
+    width: 70%;
+    height: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em ;
+    cursor: text;
+}
+.signup > button{
+    width: 50% ;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(236, 230, 230);
+    border: none;
+    border-radius: 6%;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+footer{
+    height: 7vh;
+   }
+
+.socials {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+}
+
+@media (max-width: 599px) {
+    .nav-icons{
+        display: none;
+    }
+    nav.sidebutton{
+        display: block
+    }
+    #sidebuttonopen{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        border: none;
+    }
+    #sidebuttonclose{
+        display: none;
+        border: none;
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        z-index: 100;
+        background-color: transparent;
+    }
+    aside{
+        display: none;
+        padding-top: 10vh;
+        z-index: 99;
+        font-size: 1.5rem;
+    }
+
+    img{
+    width: auto;
+    height: 40vh;
+    object-fit: cover;
+    margin-left: 5vw;
+    float: none;
+    }
+    main .product{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5vw;
+    margin-top: 2vh;
+}
+.product > .name{
+    font-size: clamp(1.1rem, 2vw, 3rem);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: rgb(36, 35, 35);
+}
+.product > .tag{
+    font-size: clamp(0.7rem, 2vw, 3rem);
+    font-family: sans-serif;
+    margin-top: 2;
+    font-weight: 200;
+    color: rgb(121, 118, 118);
+    
+}
+main .features{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3;
+    padding-top: 3%;
+    margin-left: 10vw;
+    line-height: 1.7;
+    clear: none;
+}
+
+.features h2{
+    margin-bottom: 0;
+    font-weight: 700;
+   font-size: clamp(1em, 2vw, 2.5rem);
+   color: rgb(104, 102, 102);
+}
+.features ul{
+    font-weight: 100;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signup{
+    position: relative;
+    top: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vh;
+    left: -10vw;
+}
+
+.signup > input{
+    width: 70%;
+    height: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: text;
+}
+.signup > button{
+    width: 50% ;
+    height: 5vh;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: rgb(236, 230, 230);
+    border: none;
+    border-radius: 6%;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+}
